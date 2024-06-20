@@ -2,11 +2,80 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TEST</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>タイトルです</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 </head>
 <body>
-    <h3>test</h3>
+
+<!-- 1. ヘッダ -->
+<!-- heroコンポーネント -->
+<haeder>
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        タイトル文字
+      </h1>
+      <h2 class="subtitle is-6">
+        サブタイトル文字
+      </h2>
+    </div>
+    
+  </div>
+</section>
+<div class="columns">
+  <div class="column"><a class="button is-large is-fullwidth">１</a></div>
+  <div class="column"><a class="button is-large is-fullwidth">２</a></div>
+  <div class="column"><a class="button is-large is-fullwidth">３</a></div>
+  <div class="column"><a class="button is-large is-fullwidth">４</a></div>
+  <div class="column"><a class="button is-large is-fullwidth">５</a></div>
+</div>
+</haeder>
+<!-- 2. 本文 -->
+<!-- レイアウトのためのsection、containerコンポーネント -->
+<section class="section">
+    <div class="container">
+      <h3>本文</h3>
+    </div>
+</section>
+
+<section class="section">
+    <div class="content is-normal">
+      <h3>折りたたみリスト</h3>
+        <details>
+        <summary>この中だよ</summary>
+        <ul>
+        <li>F<ul><li>a</li><li>e</li></ul></li>
+        <li>S<ul><li>b</li><li>d</li></ul></li>
+        </ul>
+        </details>
+        <details>
+          <summary>この中だって</summary>
+          <ul>
+          <li>F<ul><li>a</li><li>e</li></ul></li>
+          <li>S<ul><li>b</li><li>d</li></ul></li>
+          </ul>
+          </details><details>
+            <summary>この中らしい</summary>
+            <ul>
+            <li>F<ul><li>a</li><li>e</li></ul></li>
+            <li>S<ul><li>b</li><li>d</li></ul></li>
+            </ul>
+            </details>
+      </div>
+  
+
+</section>
+
+<!-- 3. フッタ -->
+<!-- footerコンポーネント -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      フッタ文字
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
